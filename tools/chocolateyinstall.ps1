@@ -10,12 +10,9 @@ $packageArgs = @{
   unzipLocation = $toolsDir
   fileType      = 'msi'
   url           = $url
-
-  softwareName  = 'reddit-wallpaper-changer*'
-
+  softwareName  = 'reddit wallpaper changer'
   checksum      = '16fa512b05dcfc7215805e218bb70940'
   checksumType  = 'md5'
-
   silentArgs    = "/passive /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
   validExitCodes= @(0, 3010, 1641)
 }
